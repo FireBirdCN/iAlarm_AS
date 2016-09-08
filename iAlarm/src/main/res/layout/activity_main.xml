@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--内容区-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <!--左侧导航菜单-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/drawer" />
+
+    <LinearLayout
+     android:baselineAligned="false"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="@drawable/bggg"
+     >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/mainlayout_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButton_Athome"
+                android:background="@drawable/inhome_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp" 
+                android:layout_margin="1dp"
+                		
+                />
+            <ImageButton
+                android:id="@+id/imageButton_SOS"
+                android:background="@drawable/sos_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButton_Leave"
+                android:background="@drawable/leavehome_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp"  
+                android:layout_margin="1dp"    		  		
+                />
+            <ImageButton
+                android:id="@+id/imageButton_Custome"
+                android:background="@drawable/custom_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp" 
+        		/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton_Cancel"
+                android:background="@drawable/cancel_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp"  
+                android:layout_margin="1dp" 		
+                />
+            <ImageButton
+                android:id="@+id/imageButton_Setting"
+                android:background="@drawable/setting_bn_style"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp" 
+				/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

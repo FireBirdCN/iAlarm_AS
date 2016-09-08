@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F3F6"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical" >
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:id="@+id/AccessoriesCfg"
+                style="@style/top_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="日期" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角 -->
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="时间" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="时区" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="24小时制" />
+               <android.support.v7.widget.SwitchCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+             <!--   <ImageView style="@style/img_arrow" />-->
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="自动校时" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="Exit" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角 -->
+
+            <LinearLayout style="@style/bottom_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="报警设置" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 全圆角 -->
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <LinearLayout style="@style/single_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="其他设置" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
