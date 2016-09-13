@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/iAlarm/iAlarm.iml" filepath="$PROJECT_DIR$/iAlarm/iAlarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iAlarm_AS.iml" filepath="$PROJECT_DIR$/iAlarm_AS.iml" />
+    </modules>
+  </component>
+</project>

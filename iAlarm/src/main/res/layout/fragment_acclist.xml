@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F3F6"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical" >
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                
+                style="@style/top_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:id="@+id/AddAccButton"
+                    android:text="添加设备" />
+
+                <ImageView style="@style/img_arrow"
+                     />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角 -->
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="删除设备" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="设备名称" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="OK" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="Cancle" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="Exit" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角 -->
+
+            <LinearLayout style="@style/bottom_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="报警设置" />
+
+                <ImageView style="@style/img_arrow" />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@android:drawable/ic_input_add">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 全圆角 -->
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <LinearLayout style="@style/single_layout" >
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="其他设置" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
